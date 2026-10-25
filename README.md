@@ -1,4 +1,10 @@
-{% raw %}
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Genera códigos QR personalizados para webs, redes sociales, WhatsApp, Wi-Fi, correo y más.">
+<title>Qrioso — Generador de códigos QR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
@@ -68,6 +74,9 @@
 .lince .ctc{padding:28px}}
 @media(prefers-reduced-motion:reduce){.lince *{animation:none!important;transition:none!important}}
 </style>
+</head>
+<body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <div class="lince" id="qrioso"><div class="w">
 <div class="top"><div class="lg">Qrioso</div><button class="tg" id="tg" aria-label="Cambiar entre modo claro y oscuro"></button></div>
@@ -195,6 +204,5 @@ if(window.qrcode)boot();
 else{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js';s.onload=boot;s.onerror=()=>{icon();chips();fields();$('#tl').innerHTML='<div class="hint">No se pudo cargar el generador. Recarga la página.</div>'};document.head.appendChild(s)}
 </script>
 </div>
-{% endraw %}
-
-
+</body>
+</html>
